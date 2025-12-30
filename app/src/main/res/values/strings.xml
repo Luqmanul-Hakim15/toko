@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">toko</string>
+    <string-array name="status_array">
+        <item>Semua</item>
+        <item>Berhasil</item>
+        <item>Pending</item>
+        <item>Gagal</item>
+    </string-array>
 </resources>

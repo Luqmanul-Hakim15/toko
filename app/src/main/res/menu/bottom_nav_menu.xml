@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_rekap" android:icon="@drawable/ic_list"
+        android:title="Transaksi" />
+    <item
+        android:id="@+id/nav_etalase"
+        android:icon="@drawable/ic_store"
+        android:title="Etalase" />
+    <item
+        android:id="@+id/nav_verifikasi"
+        android:icon="@drawable/ic_edit"
+        android:title="Verifikasi" />
+    <item
+        android:id="@+id/nav_akun"
+        android:icon="@drawable/ic_person"
+        android:title="Akun" />
+</menu>
