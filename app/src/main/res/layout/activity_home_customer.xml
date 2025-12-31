@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Scroll Content -->
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -20,7 +19,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Search + icon -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -45,11 +43,9 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:padding="6dp"
-                    android:src="@drawable/outline_add_shopping_cart_24"
-                    android:background="@drawable/bg_icon_round"/>
+                    android:src="@drawable/outline_add_shopping_cart_24" />
             </RelativeLayout>
 
-            <!-- Title -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -58,172 +54,10 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="12dp"/>
 
-            <!-- ============= CARD 1 ============= -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginBottom="12dp"
-                android:radius="14dp"
-                android:cardElevation="20dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="12dp">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/ic_placeholder"
-                        android:background="#EEEEEE"/>
-
-                    <TextView
-                        android:id="@+id/txtName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="100dp"
-                        android:text="Bayam"
-                        android:textSize="16sp"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="100dp"
-                        android:layout_below="@+id/txtName"
-                        android:text="Rp. 3,000 / kg"
-                        android:textColor="#FF3A3A"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="100dp"
-                        android:layout_below="@+id/txtName"
-                        android:layout_marginTop="26dp"
-                        android:text="Lemonilo"
-                        android:textColor="#777"/>
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_more"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"/>
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginBottom="12dp"
-                android:radius="14dp"
-                android:cardElevation="20dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="12dp">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/ic_placeholder"
-                        android:background="#EEEEEE"/>
-
-                    <TextView
-                        android:id="@+id/txtName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="100dp"
-                        android:text="Bayam"
-                        android:textSize="16sp"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="100dp"
-                        android:layout_below="@+id/txtName"
-                        android:text="Rp. 3,000 / kg"
-                        android:textColor="#FF3A3A"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="100dp"
-                        android:layout_below="@+id/txtName"
-                        android:layout_marginTop="26dp"
-                        android:text="Lemonilo"
-                        android:textColor="#777"/>
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_more"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"/>
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginBottom="12dp"
-                android:radius="14dp"
-                android:cardElevation="20dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="12dp">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/ic_placeholder"
-                        android:background="#EEEEEE"/>
-
-                    <TextView
-                        android:id="@+id/txtName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="100dp"
-                        android:text="Bayam"
-                        android:textSize="16sp"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="100dp"
-                        android:layout_below="@+id/txtName"
-                        android:text="Rp. 3,000 / kg"
-                        android:textColor="#FF3A3A"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="100dp"
-                        android:layout_below="@+id/txtName"
-                        android:layout_marginTop="26dp"
-                        android:text="Lemonilo"
-                        android:textColor="#777"/>
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_more"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"/>
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-
+            //card
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bottom Menu -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/consMenu"
         android:layout_width="match_parent"
@@ -232,55 +66,55 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <TextView
-            android:id="@+id/txtMenuAccount"
+            android:id="@+id/txtMenuHome"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/baseline_person_24"
-            android:padding="10dp"
+            android:drawableTop="@drawable/outline_add_home_24"
+            android:padding="15dp"
             android:text="Home"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/txtMenuMenu" />
+            app:layout_constraintEnd_toStartOf="@+id/txtMenuKeranjang" />
 
         <TextView
-            android:id="@+id/txtMenuMenu"
+            android:id="@+id/txtMenuKeranjang"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/outline_book_2_24"
-            android:padding="10dp"
+            android:drawableTop="@drawable/outline_add_shopping_cart_white_24"
+            android:padding="15dp"
             android:text="Keranjang"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/txtMenuAccount"
-            app:layout_constraintEnd_toStartOf="@+id/txtMenuShop" />
+            app:layout_constraintStart_toEndOf="@+id/txtMenuHome"
+            app:layout_constraintEnd_toStartOf="@+id/txtMenuTransaksi" />
 
         <TextView
-            android:id="@+id/txtMenuShop"
+            android:id="@+id/txtMenuTransaksi"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/outline_shopping_cart_24"
-            android:padding="10dp"
+            android:drawableTop="@drawable/outline_format_list_bulleted_24"
+            android:padding="15dp"
             android:text="Transaksi"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/txtMenuMenu"
-            app:layout_constraintEnd_toStartOf="@+id/txtMenuReport" />
+            app:layout_constraintStart_toEndOf="@+id/txtMenuKeranjang"
+            app:layout_constraintEnd_toStartOf="@+id/txtMenuAkun" />
 
         <TextView
-            android:id="@+id/txtMenuReport"
+            android:id="@+id/txtMenuAkun"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:drawableTop="@drawable/outline_bar_chart_24"
-            android:padding="10dp"
+            android:drawableTop="@drawable/twotone_group_24"
+            android:padding="15dp"
             android:text="Akun"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/txtMenuShop"
+            app:layout_constraintStart_toEndOf="@+id/txtMenuTransaksi"
             app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

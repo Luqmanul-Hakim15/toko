@@ -28,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email"
+            android:paddingBottom="6dp"
             android:textColor="#FFFFFF"
             android:layout_marginTop="60dp"
             android:layout_gravity="start"/>
@@ -37,6 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="Masukan email anda"
+            android:textSize="16dp"
             android:background="@color/white"
             android:padding="12dp"
             android:inputType="textEmailAddress"
@@ -48,6 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Password"
+            android:paddingBottom="6dp"
             android:textColor="#FFFFFF"
             android:layout_marginTop="16dp"
             android:layout_gravity="start"/>
@@ -58,6 +61,7 @@
             android:layout_height="50dp"
             android:hint="Masukan kata sandi anda"
             android:background="@color/white"
+            android:textSize="16dp"
             android:padding="12dp"
             android:inputType="textPassword"
             android:textColor="#000"
@@ -67,6 +71,7 @@
             android:id="@+id/txtForgotPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="6dp"
             android:text="Lupa Password?"
             android:textColor="#FFFFFF"
             android:textSize="12sp"
@@ -77,11 +82,12 @@
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:paddingTop="6dp"
             android:text="Masuk"
-            android:textSize="16sp"
+            android:textSize="16dp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
-            android:background="@color/black"/>
+            android:background="@color/white"/>
 
         <TextView
             android:layout_width="wrap_content"
