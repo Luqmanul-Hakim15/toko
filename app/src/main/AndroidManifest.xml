@@ -11,11 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Toko">
-
+        <activity
+            android:name=".add_produk_supplier"
+            android:exported="false" />
         <activity
             android:name=".Akun"
             android:exported="false" />
-
+        <activity
+            android:name=".ProductDetailCustomer"
+            android:exported="false" />
         <activity
             android:name=".HomeCustomerActivity"
             android:exported="false" />
@@ -30,6 +34,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

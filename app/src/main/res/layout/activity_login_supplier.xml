@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#3B4BA6">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="start"> <!-- Ubah dari center_horizontal ke start -->
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOKO EKA"
+        android:textStyle="bold"
+        android:textSize="34sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="180dp"
+        android:layout_gravity="center_horizontal"/> <!-- hanya judul yg center -->
+
+    <!-- Email -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:paddingBottom="6dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="start"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Masukan email anda"
+        android:textSize="16dp"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:textColor="#000"
+        android:textColorHint="#BDBDBD"/>
+
+    <!-- Password -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:paddingBottom="6dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="start"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Masukan kata sandi anda"
+        android:background="@color/white"
+        android:textSize="16dp"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textColorHint="#BDBDBD"/>
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:text="Lupa Password?"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="start"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="6dp"
+        android:text="Masuk"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidak Punya Akun?"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Sekarang"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+</ScrollView>
