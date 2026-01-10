@@ -1,17 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuCustomerFragment">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- BARIS SEARCH + ICON BAG -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Fragment Home Customer"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textAlignment="center"/>
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
-</FrameLayout>
+        <!-- SEARCH BAR -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="2dp">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Cari barang disini"
+                android:textSize="14sp"
+                android:paddingHorizontal="16dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:textColorHint="#9E9E9E" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- ICON BAG (DI LUAR SEARCH) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardElevation="2dp">
+
+            <ImageView
+                android:id="@+id/ivBag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/ic_shopping_bag"
+                android:tint="#000000" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <!-- JUDUL (TETAP) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Produk pilihan"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- RECYCLERVIEW (TETAP CARD item_produk.xml) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProduk"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_produk" />
+
+</LinearLayout>
