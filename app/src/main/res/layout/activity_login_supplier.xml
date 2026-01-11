@@ -21,7 +21,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TOKO EKA"
+                android:text="TOKO EKAs"
                 android:textColor="#FFFFFF"
                 android:textSize="48sp"
                 android:textStyle="bold"
