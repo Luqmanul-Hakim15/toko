@@ -20,7 +20,7 @@
         android:id="@+id/bottomNavContainer"
         android:layout_width="0dp"
         android:layout_height="70dp"
-        android:background="#F39C12"
+        android:background="#4CAF50"
         android:orientation="horizontal"
         android:weightSum="4"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,19 +33,23 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_home"
-                app:tint="#FFFFFF"/>
+                android:tint="#FFFFFF"
+                android:layout_marginBottom="4dp"/>
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Home"
                 android:textColor="#FFFFFF"
-                android:textSize="10sp"/>
+                android:textSize="10sp"
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <!-- KERANJANG -->
@@ -54,19 +58,23 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/outline_add_shopping_cart_white_24"
-                app:tint="#FFFFFF"/>
+                android:tint="#FFFFFF"
+                android:layout_marginBottom="4dp"/>
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Keranjang"
                 android:textColor="#FFFFFF"
-                android:textSize="10sp"/>
+                android:textSize="10sp"
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <!-- TRANSAKSI -->
@@ -75,38 +83,45 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_list"
-                app:tint="#FFFFFF"/>
+                android:tint="#FFFFFF"
+                android:layout_marginBottom="4dp"/>
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Transaksi"
                 android:textColor="#FFFFFF"
-                android:textSize="10sp"/>
+                android:textSize="10sp"
+                android:textStyle="bold"/>
         </LinearLayout>
 
-        <!-- AKUN -->
+        <!-- AKUN (AKTIF) -->
         <LinearLayout
             android:id="@+id/btnNavAkun"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
             android:orientation="vertical"
-            android:background="#D35400">
+            android:gravity="center"
+            android:background="#388E3C">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_person"
-                app:tint="#FFFFFF"/>
+                android:tint="#FFFFFF"
+                android:layout_marginBottom="4dp"/>
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Akun"
                 android:textColor="#FFFFFF"
                 android:textSize="10sp"
