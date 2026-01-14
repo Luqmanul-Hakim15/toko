@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#FFFFFF">
 
-    <!-- JUDUL -->
+    <!-- 1. JUDUL (DI ATAS) -->
     <TextView
+        android:id="@+id/tvJudul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:text="Keranjang Anda"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="#000"
         android:padding="16dp" />
 
-    <!-- LIST PRODUK -->
+    <!-- 2. TOTAL BELANJA (DI BAWAH) -->
+    <include
+        android:id="@+id/layout_total"
+        layout="@layout/layout_total_belanja_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
 
-    <!-- TOTAL BELANJA (WAJIB wrap_content) -->
-
+    <!-- 3. LIST PRODUK (MENGISI SISA RUANG DI TENGAH) -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvKeranjang"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:padding="12dp" />
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvJudul"
+        android:layout_above="@id/layout_total"
+        android:padding="12dp"
+        tools:listitem="@layout/item_produk" />
 
-    <include
-        layout="@layout/layout_total_belanja_customer"
-        android:layout_height="wrap_content"/>
-
-</LinearLayout>
+</RelativeLayout>
