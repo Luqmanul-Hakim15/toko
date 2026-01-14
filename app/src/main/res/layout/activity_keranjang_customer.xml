@@ -34,6 +34,6 @@
         android:layout_below="@id/tvJudul"
         android:layout_above="@id/layout_total"
         android:padding="12dp"
-        tools:listitem="@layout/item_produk" />
+        tools:listitem="@layout/item_keranjang_customer" />
 
 </RelativeLayout>

@@ -1,7 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Tema Dasar untuk Mode Gelap -->
     <style name="Base.Theme.Toko" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
+        <!-- Kustomisasi khusus untuk mode gelap. -->
+        <!-- Contoh: Menggunakan warna primer yang berbeda untuk mode gelap -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
 </resources>
+    

@@ -1,11 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema dasar untuk mode terang -->
     <style name="Base.Theme.Toko" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Kustomisasi tema terang bisa ditambahkan di sini.
+             Contoh: <item name="colorPrimary">@color/purple_500</item> -->
     </style>
 
+    <!-- Tema publik yang digunakan oleh aplikasi -->
     <style name="Theme.Toko" parent="Base.Theme.Toko" />
-
-    <style name="CircleImage">
-        <item name="cornerSize">50%</item>
-    </style>
 
 </resources>
